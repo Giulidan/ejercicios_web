@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300&display=swap");
+
+* {
+  border: 1px solid red;
+  background-color: #0a0a0a;
+  color: white;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  margin: 20px;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+}
+
+nav {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #7B6AC8;
+}
+
+nav ul {
+  display: inline;
+  list-style: none;
+}
+
+nav li {
+  margin-left: 10px;
+  display: inline;
+}
+
+nav a{
+  text-decoration: none;
+}
+
