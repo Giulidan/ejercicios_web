@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Yanone+Kaffeesatz:wght@300&display=swap");
 
 html{
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   font-size: 20px;
 }
 
 * {
   /* border: 1px solid red; */
-  /* background-color: #0a0a0a; */
   color: white;
   font-family: "Yanone Kaffeesatz", sans-serif;
   box-sizing: border-box;
@@ -16,9 +15,8 @@ html{
 }
 
 .main-container {
-  background-color: rgb(30, 30, 30) !important;
-  border-radius: 10px;
-  height: 100vh;
+  background-color: rgb(30, 30, 30);
+  border-radius: 20px;
   width: 80%;
   margin: 20px auto;
 }
@@ -28,32 +26,24 @@ h1 {
 }
 
 nav {
-  padding-top: 10px;
-  background-color: rgb(17, 17, 17);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: rgb(46, 57, 70);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  font-size: 1.2rem;
-  text-align: center;  
+  font-size: 1.4rem;
 }
 
 nav a {
-  vertical-align: 6px;
-  background-color: transparent;
+  padding-top: 5px;
   margin-left: 15px;
-  display: inline;
   text-decoration: none;
-  transition: font-size 0.1s ease-out;
-
 }
 
 nav img:hover{
   filter: saturate(2);
   
-}
-
-nav a:hover{
-  font-size: 1.4rem;
-  transition: font-size 0.1s ease-out;
 }
 
 main{
