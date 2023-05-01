@@ -1,6 +1,5 @@
 :root{
   --corners-radious: 10px;
-
 }
 
 * {
@@ -18,7 +17,7 @@ body {
   margin: 10px auto;
 }
 
-.logo {
+.nav_logo {
   border-radius: 10px;
 }
 
@@ -34,13 +33,13 @@ body {
   border-bottom: white solid 1px;
 }
 
-.nav__links {
+.nav_links {
   display: flex;
   list-style: none;
   gap: 20px;
 }
 
-.nav__link {
+.nav_link {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
