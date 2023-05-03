@@ -1,0 +1,203 @@
+/* IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300");
+/*
+font-family: 'Jost', sans-serif;
+*/
+
+/* VARIABLES */
+
+:root {
+  --background: #151313;
+  --primary: #974a4a;
+  --secondary: #2b2626;
+  --mid-gray: #5a5151;
+  --text-gray: #cfb7ad;
+  --text-white: #f3f4f6;
+}
+
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* —————————————————————————————————————————————— */
+
+body {
+  background-color: var(--background);
+  color: var(--text-white);
+}
+
+header {
+  background: var(--secondary);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid var(--text-gray);
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+}
+
+.navbar-list {
+  gap: 20px;
+  font-size: 1.2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar-list a {
+  color: var(--text-gray);
+}
+
+.navbar-list li:nth-child(1) > a {
+  color: var(--text-white);
+  font-weight: 700;
+  border-bottom: var(--primary) 2px dotted;
+  font-size: calc(100% + 5px);
+  position: relative;
+  top: -5px;
+
+}
+
+/*--MAIN-------------------------------------------------------*/
+
+main {
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/*Hero*/
+#hero {
+  margin: 60px 0px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+/* title */
+.hero-info h1 {
+  font-size: 5rem;
+  width: 80%;
+  min-width: 500px; /*Para que nunca ocupe menos que esto en desktop*/
+  font-weight: 800;
+  color: var(--text-white);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 5px;
+}
+
+.hero-info p {
+  font-size: 20px;
+  line-height: 1.4rem;
+  width: 70%;
+  color: var(--text-gray);
+  font-family: "Jost", sans-serif;
+}
+
+
+.hero-info a {
+  margin-top: 10px;
+  color: var(--text-white);
+  background-color: var(--primary);
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 140px;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 30%;
+}
+
+.hero-info a:hover {
+  color: var(--primary);
+  background-color: var(--text-white);
+}
+
+.hero-info-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-card {
+  width: 300px;
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-card img {
+  border-radius: 10px;
+}
+
+
+/* —————————————————————————————————————————————— */
+
+.info1, .info2{
+  background-color: #974a4a;
+  max-width: 1000px;
+  border-radius: 20px;
+  display:flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding: 40px;
+  gap:50px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+.info2{
+  background-color: var(--secondary);
+
+}
+
+.info1 h2, .info2 h2{
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+}
+
+.info1 p, .info2 p{
+  font-size: 1.2rem;
+  font-family: "Jost", sans-serif;
+}
+
+.info1 .hl, .info2 .hl{
+  font-style: italic;
+  background-color: var(--text-gray);
+  color: var(--primary);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.info2 .hl{
+  color: var(--text-white);
+  background-color: var(--mid-gray);
+}
