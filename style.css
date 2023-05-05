@@ -171,6 +171,8 @@ main {
   gap:50px;
   text-align: justify;
   margin-bottom: 40px;
+  margin: 0 20px 40px 20px;
+  /* margin: 40px; */
 }
 
 .info2{
@@ -200,4 +202,56 @@ main {
 .info2 .hl{
   color: var(--text-white);
   background-color: var(--mid-gray);
+}
+
+/* CARD */
+
+.cards-section{
+  display: flex;
+  flex-flow: column nowrap;
+  /* min-width: 50vw; */
+  margin-top: 30px;
+}
+
+.cards-section-title{
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cards-section-title h2{
+  font-size: 2.4rem;
+}
+
+.cards-section-title p{
+  font-size: 1.4rem;
+  color: var(--text-gray);
+  
+}
+
+.cards-section-cont{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #2b2626;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.card img{
+  border-radius: 20px;
+}
+
+.card h3, .card p{
+  text-align: center;
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+.card h3{
+  font-size: 1.4rem;
+}
+
+.card p{
+  font-size: 1.1rem;
+  text-align: left;
 }
