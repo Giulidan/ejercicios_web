@@ -97,7 +97,7 @@ a:not(.current):hover {
   /* background-color: black; */
   color: whitesmoke;
   padding: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 .hero-img img {
@@ -127,7 +127,7 @@ a:not(.current):hover {
 
 .info p {
   font-family: var(--secondFont);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   padding: 1rem;
 }
 
@@ -196,13 +196,12 @@ iframe {
 
 .material-symbols-outlined {
   padding-right: 0.8rem;
-  vertical-align: bottom;
+  vertical-align: sub;
 }
 
 /* ——NEWSLETTER———————————————————————————————————————————— */
 
 .newsletter {
-  /* background-color: black; */
   color: white;
   padding: 6rem 1rem;
   text-align: justify;
@@ -256,4 +255,23 @@ iframe {
     flex-direction: column;
     align-items: start;
   }
+}
+
+/* ——FOOTER———————————————————————————————————————————— */
+
+footer{
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.277);
+}
+
+footer img{
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: all 150ms;
+}
+
+footer img:hover{
+  opacity: 1;
+  transform: rotate(-2deg);
 }
