@@ -582,10 +582,6 @@ footer img:hover {
   scroll-margin-top: calc(var(--nav-height) + var(--spacing));
 }
 
-#gallery {
-  scroll-margin-top: var(--nav-height);
-}
-
-#contact {
+#gallery, #contact, #home {
   scroll-margin-top: var(--nav-height);
 }
