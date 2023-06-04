@@ -101,7 +101,8 @@ header {
   position: absolute;
 }
 
-.hamburguer {
+/* En el teléfono está desalineado :( */
+.hamburguer { 
   display: none;
   background-color: var(--nav-color);
   border: 1px solid var(--white-color);
