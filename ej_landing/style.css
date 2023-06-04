@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Jost:wght@500&display=swap");
+
+/* ——VARIABLES———————————————————————————————————————————— */
+:root {
+  --mainFont: "Jost", sans-serif;
+  --secondFont: "Crimson Text", serif;
+  /* --backColor: white;
+  --accent: black;
+  --textcolor: black; */
+  --itemsMargin: 2rem;
+  --backColor: rgb(14, 14, 14);
+  --accent: white;
+  --textcolor: rgb(217, 217, 217);
+}
+
+/* ——RESET———————————————————————————————————————————— */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-family: var(--mainFont);
+  font-weight: 400;
+  line-height: 1.5;
+  background: var(--backColor);
+  color: var(--textcolor);
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ——NAVBAR———————————————————————————————————————————— */
+
+.navbar {
+  background-color: var(--backColor);
+  position: sticky;
+  top: 0px;
+  padding: 1rem;
+  margin-bottom: var(--itemsMargin);
+  z-index: 99;
+  border-bottom: 1px var(--accent) solid;
+}
+
+.links {
+  gap: 15px;
+  display: flex;
+  place-content: center;
+}
+
+.links a {
+  color: var(--textcolor);
+  font-size: 1.1rem;
+}
+
+a:not(.current):hover {
+  font-style: italic;
+  transform: rotate(-2deg);
+  color: white;
+}
+
+.current {
+  color: pink !important;
+  border-bottom: 1px solid pink;
+  font-weight: 800;
+}
+
+/* —HERO————————————————————————————————————————————— */
+
+.hero-text {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  place-items: center;
+}
+
+.hero h1 {
+  color: pink;
+  text-align: center;
+  font-size: clamp(3rem, 10vw, 7rem);
+  display: inline;
+  /* border: 1px solid red; */
+}
+
+.hero p {
+  font-family: var(--secondFont);
+  /* background-color: black; */
+  color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.hero-img img {
+  display: block;
+  margin: var(--itemsMargin) 0;
+  width: clamp(300px, 100%, 1200px);
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border-top: 1px solid pink;
+  border-bottom: 1px solid pink;
+}
+
+/* ——INFO ABOUT———————————————————————————————————————————— */
+
+.info {
+  color: white;
+  padding: 3rem 0;
+  text-align: justify;
+}
+
+.info h2 {
+  padding: 1rem;
+  color: pink;
+  font-size: 3rem;
+}
+
+.info p {
+  font-family: var(--secondFont);
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+span {
+  color: pink;
+  font-style: italic;
+}
+
+/* ——CARDS———————————————————————————————————————————— */
+
+.cards-container {
+  margin-top: var(--itemsMargin);
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 60px 20px;
+  /* outline: 1px solid red; */
+}
+
+.card {
+  max-width: 386px;
+  background-color: var(--accent);
+  position: relative;
+  text-align: center;
+  transition: all 120ms;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  transition: all 150ms;
+  filter: saturate(0);
+  /* border: 2px solid grey; */
+}
+
+.card-subtitle {
+  color: black;
+  position: absolute;
+  font-size: 1.1rem;
+  top: 100%;
+  left: 10px;
+  transform: translateY(-50%);
+  background-color: pink;
+  padding: 0.4rem 1rem;
+  /* text-align: center; */
+  /* border-radius: 100%; */
+}
+
+.card img:hover {
+  opacity: 0.9;
+  outline: 1px solid pink;
+  filter: saturate(1);
+}
+
+/* ——CONTACT & MAP———————————————————————————————————————————— */
+
+.contact {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+}
+
+.material-symbols-outlined {
+  padding-right: 0.8rem;
+  vertical-align: sub;
+}
+
+/* ——NEWSLETTER———————————————————————————————————————————— */
+
+.newsletter {
+  color: white;
+  padding: 6rem 1rem;
+  text-align: justify;
+  position: relative;
+}
+
+.newsletter h2 {
+  color: pink;
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  gap: 100px;
+}
+
+.form input {
+  height: 100%;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0 2rem;
+  background-color: rgb(82, 82, 82);
+  color: white;
+}
+
+.form input:focus {
+  outline: 2px solid pink;
+}
+
+.form button {
+  font-size: 1.4rem;
+  padding: 1rem;
+  height: 100%;
+  background-color: pink;
+  color: black;
+  border: none;
+}
+
+/* ——MEDIA QUERIES———————————————————————————————————————————— */
+
+@media (width <= 700px) {
+  .hero-text {
+    flex-direction: column;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+/* ——FOOTER———————————————————————————————————————————— */
+
+footer{
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.277);
+}
+
+footer img{
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: all 150ms;
+}
+
+footer img:hover{
+  opacity: 1;
+  transform: rotate(-2deg);
+}

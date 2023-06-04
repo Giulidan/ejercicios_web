@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html x-data="data">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="header-container">
+      <header>
+        <div class="nav-left">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span class="material-symbols-rounded menu-btn">menu</span>
+            <div class="hamburguer">
+              <a href="index.html#about">About</a>
+              <a href="index.html#gallery">Gallery</a>
+              <a href="index.html#contact">Contact</a>
+            </div>
+          </label>
+          <a class="logo" href="index.html">Home</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="login nav-btns" href="#">
+            <span class="material-symbols-rounded">person</span></a
+          >
+          <a class="signup nav-btns" href="signup.html">Sign up</a>
+        </div>
+      </header>
+    </div>
+
+    <div class="main-container">
+      <div class="spacer"></div>
+      <div class="spacer"></div>
+
+      <!--  -->
+      <section class="login-container">
+        <p><span class="material-symbols-rounded">person</span></p>
+        <h1>MEMBER LOGIN</h1>
+        <form action="">
+          <input type="text" placeholder="E-mail" />
+          <br />
+          <input type="password" name="" id="" placeholder="Password" />
+          <br />
+
+          <button type="submit" class="btn">Login</button>
+          <div class="login-options">
+            <p>Forgot your password? <a href="password_reset.html">Click here</a></p>
+            <p>Are you a new user? <a href="signup.html">Sign Up</a><br /></p>
+          </div>
+        </form>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!--  -->
+      <footer>
+        <img src="img/footer.png" alt="CC0 banner" />
+        <p>No rights reserved.</p>
+      </footer>
+
+      <div class="spacer"></div>
+    </div>
+  </body>
+</html>

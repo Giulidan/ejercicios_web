@@ -1,145 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html x-data="data">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
     />
-    <title>Landing</title>
+    <title>Proyecto integrador</title>
   </head>
   <body>
-    <!-- NAVBAR -->
+    
+    <!-- Daniel no existe, los datos de esta página son ficticios, con el único propósito de no usar lorem ipsum.  -->
 
-    <div class="navbar">
-      <nav>
-        <ul class="links">
-          <li><a class="current" href="#">home</a></li>
-          <li><a href="#">docs</a></li>
-          <li><a href="#">archive</a></li>
-          <li><a href="#">about</a></li>
-        </ul>
-      </nav>
+    <div class="header-container">
+      <header>
+        <div class="nav-left">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle">
+            <span class="material-symbols-rounded menu-btn">menu</span>
+            <div class="hamburguer">
+              <a href="#about">About</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </label>
+          <a class="logo" href="index.html">Home</a>
+        </div>
+
+        <div class="nav-right">
+          <a class="login nav-btns" href="login.html">
+            <span class="material-symbols-rounded">person</span></a
+          >
+          <a class="signup nav-btns" href="signup.html">Sign up</a>
+        </div>
+      </header>
     </div>
 
-    <!--  -->
+    <div class="main-container">
+      <div class="spacer"></div>
 
-    <main>
-      <!-- HERO -->
-
-      <div class="hero">
-        <div class="hero-text">
-          <h1>Home</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            consequatur similique in! Corporis, praesentium! Dicta aperiam ipsam
-            odio, repudiandae, ipsa, eaque natus velit neque at totam animi
-            minima. Consequatur, nemo?
-          </p>
-        </div>
-        <div class="hero-img">
-          <img src="img/rosa.JPG" alt="" />
-        </div>
-      </div>
-
-      <!-- INFO -->
-
-      <div class="info">
-        <div class="info__h2">
-          <h2>About me</h2>
-        </div>
+      <section class="hero">
+        <h1>Hi, I'm Daniel.</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quidem
-          harum suscipit facilis explicabo natus quibusdam dolore rem nisi
-          itaque voluptate officia, expedita fugiat facere accusantium
-          distinctio dignissimos delectus autem! Amet voluptatibus, culpa, iste
-          hic adipisci sit unde tempore, tempora voluptates corporis aspernatur
-          ullam impedit?
-          <span>
-            Explicabo fuga, sed mollitia excepturi possimus reiciendis laborum
-            aliquam iste recusandae cumque doloremque quos aut.
-          </span>
-          Vel tempore recusandae obcaecati, explicabo ut enim aspernatur quasi
-          accusamus a? Tempora eius quae maxime tenetur odio voluptates sunt
-          bespanatae explicabo maiores consequuntur. Eligendi ab iure fugiat,
-          unde perferendis ut.
+          <span class="welcome-span">Welcome to my digital playground</span>, where design meets function in a bold and beautiful way. My passion for graphic design has brought me here, to showcase my creative talents and connect with clients from all over the world.
         </p>
-      </div>
+      </section>
 
-      <!-- CARDS -->
+      <div class="spacer"></div>
 
-      <div class="cards-container">
-        <div class="card">
-          <img src="img/luna.JPG" alt="" />
-          <div class="card-subtitle">1</div>
+      <section class="hero2">
+        <img src="img/puerta.png" alt="Design 1" />
+        <img src="img/montañoso.png" alt="Design 2" />
+        <img src="img/freedomforest.png" alt="Design 3" />
+      </section>
+
+      <div class="spacer"></div>
+
+      <!-- ABOUT -->
+
+      <div id="about"></div> <!-- Para redireccionar -->
+      <section class="about">
+        <h2>Some of the tools I use</h2>
+        <div class="about__section">
+          <div>
+            <h3>Affinity Suite</h3>
+            <p>
+              There are several reasons why Affinity Serif Apps are popular among the creative community. Firstly, they are highly intuitive and easy to learn, making them an excellent choice for beginners. Secondly, they are packed with advanced features that make them useful for professionals seeking to create complex designs. Finally, the Serif Apps are much affordable than comparable apps in the market, making them perfect for small businesses and freelancers on a budget.</p>
+          </div>
+
+          <div>
+            <h3>Gimp</h3>
+            <p>
+              GIMP is a cross-platform image editor available for GNU/Linux, macOS, Windows and more operating systems. It is free software, you can change its source code and distribute your changes. Whether you are a graphic designer, photographer, illustrator, or scientist, GIMP provides you with sophisticated tools to get your job done.
+            </p>
+          </div>
+
+          <div>
+            <h3>HTML & CSS</h3>
+            <p>
+              HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. 
+            </p>
+          </div>
         </div>
-        <div class="card">
-          <img src="img/rocas.JPG" alt="" />
-          <div class="card-subtitle">2</div>
+      </section>
+
+      <div class="spacer"></div>
+
+      <!-- GALERIA -->
+
+      <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery__section">
+          <div class="gallery__photo">
+            <div class="subtitle">Stones</div>
+            <img src="img/fotos/0.png" alt="Stones photo"/>
+          </div>
+          <div class="gallery__photo">
+            <div class="subtitle">Cat</div>
+            <img src="img/fotos/2.png" alt="Cat photo"/>
+          </div>
+          <div class="gallery__photo">
+            <div class="subtitle">Freedom</div>
+            <img src="img/fotos/4.png" alt="Freedom photo"/>
+          </div>
+          <div class="gallery__photo">
+            <div class="subtitle">Rabbit</div>
+            <img src="img/fotos/6.png" alt="Rabbit photo"/>
+          </div>
+          <div class="gallery__photo">
+            <div class="subtitle">Moon</div>
+            <img src="img/fotos/8.png" alt="Moon photo"/>
+          </div>
+          <div class="gallery__photo">
+            <div class="subtitle">Rose</div>
+            <img src="img/fotos/9.png" alt="Rose photo"/>
+          </div>
         </div>
-        <div class="card">
-          <img src="img/gato.JPG" alt="" />
-          <div class="card-subtitle">3</div>
+      </section>
+      <div class="spacer"></div>
+
+      <!-- CONTACTO -->
+      <div id="contact"></div> <!-- Para redireccionar -->
+      <section class="contact">
+        <div class="contact-block">
+          <h2>Contact me</h2>
+          <p><span class="material-symbols-rounded">language</span> Argentina</p>
+          <p><span class="material-symbols-rounded">pin_drop</span> Main street 2302</p>
+          <p><span class="material-symbols-rounded">mail</span> address@domain.com</p>
         </div>
-      </div>
-
-      <!-- CONTACT -->
-      <div class="info">
-        <div class="info__h2">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="contact">
-          <p>
-            <span class="material-symbols-outlined"> alternate_email </span>
-            address@direction.com
-          </p>
-          <p>
-            <span class="material-symbols-outlined"> pin_drop </span> Main
-            Street 9823
-          </p>
-          <p>
-            <span class="material-symbols-outlined"> language </span>
-            Canada
-          </p>
-        </div>
-      </div>
-
-      <!-- MAPA -->
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38580.52557328499!2d-75.70616775702686!3d45.41595165888493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1684108560008!5m2!1ses-419!2sar"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-
-      <!-- NEWSLETTER -->
-      <div class="newsletter">
-        <h2>Newsletter</h2>
         <div class="form">
           <form action="">
-            <input type="email" name="email" placeholder="E-mail address" />
-            <button type="submit" onclick="alert('Aprendiendo JS 😅')">
-              Sign up
-            </button>
+            <label>Name <input type="text" id="form_name"></label><br>
+            <label>E-mail <input type="email" id="form_email"></label><br>
+            <textarea id="form_msg" cols="30" rows="10" placeholder="Leave me a message 🙂"></textarea>
+            <br>
+            <button type="submit" class="btn">Send</button>
           </form>
         </div>
-      </div>
+      </section>
 
       <!--  -->
 
       <footer>
-          <img
-            alt="Creative Commons License"
-            src="https://i.creativecommons.org/p/mark/1.0/88x31.png"
-          />
+        <img src="img/footer.png" alt="CC0 banner">
+        <p>Made with ❤️ by Daniel.</p>
       </footer>
-    </main>
+
+      <div class="spacer"></div>
+
+    </div>
   </body>
 </html>
